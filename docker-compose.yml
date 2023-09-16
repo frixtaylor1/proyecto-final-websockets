@@ -1,0 +1,17 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.backend
+    container_name: backend
+    ports:
+      - "3000:3000" # Mapea el puerto 3000 del contenedor al puerto 3000 del host
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
+    container_name: frontend
+    ports:
+      - "80:80" # Mapea el puerto 80 del contenedor al puerto 80 del host
