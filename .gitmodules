@@ -1,6 +1,6 @@
-[submodule "backend"]
-	path = backend
-	url = https://github.com/frixtaylor1/websockets-chat-backend.git
-[submodule "frontend"]
-	path = frontend
-	url = https://github.com/frixtaylor1/websockets-chat-frontend.git
+[submodule "websockets-chat-serverside"]
+	path =  websockets-chat-serverside
+	url = https://github.com/frixtaylor1/websockets-chat-serverside.git
+[submodule "websockets-chat-clientside"]
+	path = websockets-chat-clientside
+	url = https://github.com/frixtaylor1/websockets-chat-clientside.git
