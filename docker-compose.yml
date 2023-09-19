@@ -1,23 +1,23 @@
 version: '3'
 services:
-  backend:
+  websockets-chat-serverside:
     build:
-      context: ./backend
+      context: ./websockets-chat-serverside
       dockerfile: Dockerfile
-    container_name: backend
+    container_name: websockets-chat-serverside
     ports:
       - 3036:3000
     volumes:
-      - ./backend:/app
-      - ./backend/node_modules:/app/node_modules
+      - ./websockets-chat-serverside:/app
+      - ./websockets-chat-serverside/node_modules:/app/node_modules
 
-  frontend:
+  websockets-chat-clientside:
     build:
-      context: ./frontend
+      context: ./websockets-chat-clientside
       dockerfile: Dockerfile
-    container_name: frontend
+    container_name: websockets-chat-clientside
     ports:
       - "80:80"
     volumes:
-      - ./frontend:/app
-      - ./frontend/node_modules:/app/node_modules
+      - ./websockets-chat-clientside:/app
+      - ./websockets-chat-clientside/node_modules:/app/node_modules

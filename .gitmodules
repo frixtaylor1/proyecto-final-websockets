@@ -1,8 +1,6 @@
 [submodule "websockets-chat-serverside"]
-	path = backend
-	path =  websockets-chat-serverside
+	path = websockets-chat-serverside
 	url = https://github.com/frixtaylor1/websockets-chat-serverside.git
 [submodule "websockets-chat-clientside"]
-	path = frontend
 	path = websockets-chat-clientside
 	url = https://github.com/frixtaylor1/websockets-chat-clientside.git
